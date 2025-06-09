@@ -38,3 +38,22 @@ console.log(typeof myFunc); // "function", myFunc is a function
 console.log(typeof heros); // "object", arrays are considered objects in JavaScript
 console.log(typeof myObj); // "object", myObj is an object
 console.log(typeof id); // "symbol", id is a symbol
+
+// Stack (Primitive types) vs Heap (Non-primitive types)
+// Primitive types are stored in the stack, while non-primitive types are stored in the heap.
+
+let myYoutubeChannel = "Codevolution"; // String, a sequence of characters
+let anotherChannel = myYoutubeChannel; // Copying the value of myYoutubeChannel
+anotherChannel = "The Internet"// Changing anotherChannel does not affect myYoutubeChannel
+console.log(anotherChannel); // "The Internet"
+console.log(myYoutubeChannel); // "Codevolution"
+
+let userOne = {
+    email: "user@gmail.com",
+    userId: "1234",     
+    isActive: true
+}; // Object, userOne is an object with properties
+let userTwo = userOne; // Reference type, userTwo points to the same object as userOne
+userTwo.email = "newUser123@gmail.com"; // Changing userTwo affects userOne
+console.log(userOne.email); 
+console.log(userTwo.email); 
