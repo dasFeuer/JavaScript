@@ -44,16 +44,7 @@ newDate.toLocaleString('defult', {
     second: 'numeric', // numeric, 2-digit
     timeZoneName: 'short' // short, long
 })
-console.log(newDate.toLocaleString('default', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    timeZoneName: 'short'
-})); // Format date and time in a readable way
+
 
 
 
